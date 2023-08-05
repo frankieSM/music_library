@@ -21,13 +21,12 @@ export default function GalleryItem(props) {
     color: "yellow",
   };
 
-  //ITEM = SONG
   const simpleView = () => {
     //SIMPLE VIEW FOR BEFORE CLICK
     return (
       <div style={simpleStyle}>
-        <h3>{props.item.trackName}</h3>
-        <h4>{props.item.collectionName}</h4>
+        <h3>{props.song.trackName}</h3>
+        <h4>{props.song.collectionName}</h4>
       </div>
     );
   };
@@ -35,10 +34,10 @@ export default function GalleryItem(props) {
   const detailedView = () => {
     return (
       <div style={detailStyle}>
-        <h2>{props.item.trackName}</h2>
-        <h3>{props.item.collectionName}</h3>
-        <h4>{props.item.primaryGenreName}</h4>
-        <h4>{props.item.releaseDate}</h4>
+        <h2>{props.song.trackName}</h2>
+        <h3>{props.song.collectionName}</h3>
+        <h4>{props.song.primaryGenreName}</h4>
+        <h4>{props.song.releaseDate}</h4>
       </div>
     );
   };
